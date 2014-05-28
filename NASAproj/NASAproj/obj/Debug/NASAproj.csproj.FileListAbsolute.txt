@@ -1,0 +1,8 @@
+C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\bin\Debug\NASAproj.exe
+C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\bin\Debug\NASAproj.pdb
+C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.csprojResolveAssemblyReference.cache
+C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.Properties.Resources.resources
+C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.csproj.GenerateResource.Cache
+C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.exe
+C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.pdb
+C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.Form1.resources

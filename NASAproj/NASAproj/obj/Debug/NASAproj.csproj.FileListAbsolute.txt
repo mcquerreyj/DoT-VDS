@@ -19,3 +19,9 @@ C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.
 C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.Properties.Resources.resources
 C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.csproj.GenerateResource.Cache
 >>>>>>> 5d7c46ed86c9266d86553ffc84008153222b3291
+C:\Users\Jonathan\Documents\GitHub\DoT-VDS\NASAproj\NASAproj\bin\Debug\NASAproj.exe
+C:\Users\Jonathan\Documents\GitHub\DoT-VDS\NASAproj\NASAproj\bin\Debug\NASAproj.pdb
+C:\Users\Jonathan\Documents\GitHub\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\GitHub\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.Form1.resources
+C:\Users\Jonathan\Documents\GitHub\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.Properties.Resources.resources
+C:\Users\Jonathan\Documents\GitHub\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.csproj.GenerateResource.Cache

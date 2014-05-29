@@ -8,5 +8,14 @@ C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug
 C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.Form1.resources
 C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.exe
 C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.pdb
+<<<<<<< HEAD
 C:\Users\Jonathan\Documents\GitHub\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.exe
 C:\Users\Jonathan\Documents\GitHub\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.pdb
+=======
+C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\bin\Debug\NASAproj.exe
+C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\bin\Debug\NASAproj.pdb
+C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.csprojResolveAssemblyReference.cache
+C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.Form1.resources
+C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.Properties.Resources.resources
+C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.csproj.GenerateResource.Cache
+>>>>>>> 5d7c46ed86c9266d86553ffc84008153222b3291

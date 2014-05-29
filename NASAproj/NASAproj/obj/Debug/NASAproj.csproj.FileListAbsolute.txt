@@ -6,3 +6,5 @@ C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug
 C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.exe
 C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.pdb
 C:\Users\Emily\documents\visual studio 2013\Projects\NASAproj\NASAproj\obj\Debug\NASAproj.Form1.resources
+C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.exe
+C:\Users\Emily\Desktop\NASAProject\DoT-VDS\NASAproj\NASAproj\obj\Debug\NASAproj.pdb

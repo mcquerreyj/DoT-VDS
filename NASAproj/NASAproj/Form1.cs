@@ -89,7 +89,7 @@ namespace NASAproj
                         if (evt.getCode() == 82 || evt.getCode() == 81)
                               Console.WriteLine(evt.toString());
                     }
-                    MessageBox.Show(sr.ReadToEnd());
+                    MessageBox.Show(this.makeFileTextBox.Text);
                     sr.Close();
                 }
             }

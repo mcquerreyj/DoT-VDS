@@ -59,24 +59,13 @@ namespace NASAproj
 
         }
 
-        //OpenSeachButton click event
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void makeButton_Click(object sender, EventArgs e)
+        private void dataButton_Click(object sender, EventArgs e)
         {
-            // check for name field
-            if (this.makeFileTextBox.Text == "")
-                MessageBox.Show("No name entered. Please choose a name for the new file!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            else
-            {
                 if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     System.IO.StreamReader sr = new
@@ -102,7 +91,6 @@ namespace NASAproj
 
                         }
                     }
-                    MessageBox.Show(this.makeFileTextBox.Text);
                     sr.Close();
 
                     //Removes duplicates from comboboxes
@@ -123,13 +111,9 @@ namespace NASAproj
                     
 
                 }
-
-                // Sets the address for the other box and shows what file is loaded into the system
-                loadFileTextBox.Text = openFileDialog1.FileName;
-            }
         }
 
-        private void loadButton_Click(object sender, EventArgs e)
+        private void pictureButton_Click(object sender, EventArgs e)
         {
             if (openFileDialog2.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {

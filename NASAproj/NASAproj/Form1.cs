@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,8 @@ namespace NASAproj
 {
     public partial class Form1 : Form
     {
+        public ArrayList events = new ArrayList(); 
+
         public Form1()
         {
             InitializeComponent();
@@ -51,12 +54,6 @@ namespace NASAproj
 
         }
 
-        //MakeSearchButton click event
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void openFileDialog1_FileOk_1(object sender, CancelEventArgs e)
         {
 
@@ -75,12 +72,26 @@ namespace NASAproj
 
         private void makeButton_Click(object sender, EventArgs e)
         {
-            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (this.makeFileTextBox.Text == "")
+                MessageBox.Show("No name entered. Please choose a name for the new file!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            else
             {
-                System.IO.StreamReader sr = new
-                   System.IO.StreamReader(openFileDialog1.FileName);
-                MessageBox.Show(sr.ReadToEnd());
-                sr.Close();
+                if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    System.IO.StreamReader sr = new
+                       System.IO.StreamReader(openFileDialog1.FileName);
+                    sr.ReadLine();
+
+                    string line;
+                    while((line = sr.ReadLine()) != null)
+                    {
+                        StopEvent evt = new StopEvent(line);
+                        if (evt.getCode() == 82 || evt.getCode() == 81)
+                              Console.WriteLine(evt.toString());
+                    }
+                    MessageBox.Show(sr.ReadToEnd());
+                    sr.Close();
+                }
             }
         }
 

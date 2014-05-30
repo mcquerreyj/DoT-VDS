@@ -17,20 +17,20 @@ namespace NASAproj
             char[] del = { ' ', ',', '.', ':', '\t' };
             string[] stop = stpevent.Split(del);
 
-            setTime(Convert.ToInt32(stop[1]), Convert.ToInt32(stop[2]), Convert.ToInt32(stop[3]));
+            setEvtTime(Int32.Parse(stop[1]), Int32.Parse(stop[2]), Int32.Parse(stop[3]));
             eventcodeid = Convert.ToInt32(stop[4]);
             param = Convert.ToInt32(stop[5]);
         }
         public StopEvent(string time, string eventC, string par)
         {
-            setTime(Convert.ToInt32(time.Substring(0, 2)), Convert.ToInt32(time.Substring(3, 2)), Convert.ToInt32(time.Substring(6)));
+            setEvtTime(Convert.ToInt32(time.Substring(0, 2)), Convert.ToInt32(time.Substring(3, 2)), Convert.ToInt32(time.Substring(6)));
             eventcodeid = Convert.ToInt32(eventC);
             param = Convert.ToInt32(par);
         }
 
 
         // format 01:07.8
-        public void setTime(int hour, int min, int mili)
+        public void setEvtTime(int hour, int min, int mili)
         {
             timestamp = hour *1000 + min *10  + mili;
         }
@@ -42,7 +42,12 @@ namespace NASAproj
 
         public string toString()
         {
-            return timestamp.ToString() + " " + eventcodeid.ToString() + " " + param.ToString();
+            return timestamp.ToString() + "," + eventcodeid.ToString() + "," + param.ToString();
+        }
+
+        public int getCode()
+        {
+            return eventcodeid;
         }
     }
 

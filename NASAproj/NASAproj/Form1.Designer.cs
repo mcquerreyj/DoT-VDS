@@ -41,6 +41,7 @@
             this.statusLabel = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.helpButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imagePane)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             // 
             // rewindButton
             // 
-            this.rewindButton.Location = new System.Drawing.Point(658, 378);
+            this.rewindButton.Location = new System.Drawing.Point(602, 256);
             this.rewindButton.Name = "rewindButton";
             this.rewindButton.Size = new System.Drawing.Size(33, 23);
             this.rewindButton.TabIndex = 8;
@@ -94,7 +95,7 @@
             // 
             // playPauseButton
             // 
-            this.playPauseButton.Location = new System.Drawing.Point(697, 378);
+            this.playPauseButton.Location = new System.Drawing.Point(641, 256);
             this.playPauseButton.Name = "playPauseButton";
             this.playPauseButton.Size = new System.Drawing.Size(39, 23);
             this.playPauseButton.TabIndex = 9;
@@ -104,7 +105,7 @@
             // 
             // forwardButton
             // 
-            this.forwardButton.Location = new System.Drawing.Point(742, 378);
+            this.forwardButton.Location = new System.Drawing.Point(686, 256);
             this.forwardButton.Name = "forwardButton";
             this.forwardButton.Size = new System.Drawing.Size(33, 23);
             this.forwardButton.TabIndex = 10;
@@ -142,7 +143,7 @@
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(655, 404);
+            this.statusLabel.Location = new System.Drawing.Point(571, 405);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(37, 13);
             this.statusLabel.TabIndex = 16;
@@ -158,11 +159,22 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
+            // helpButton
+            // 
+            this.helpButton.Location = new System.Drawing.Point(574, 353);
+            this.helpButton.Name = "helpButton";
+            this.helpButton.Size = new System.Drawing.Size(75, 23);
+            this.helpButton.TabIndex = 17;
+            this.helpButton.Text = "Help";
+            this.helpButton.UseVisualStyleBackColor = true;
+            this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 439);
+            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.parameter2Label);
             this.Controls.Add(this.parameter1Label);
@@ -198,6 +210,7 @@
         private System.Windows.Forms.Label statusLabel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.Button helpButton;
     }
 }
 

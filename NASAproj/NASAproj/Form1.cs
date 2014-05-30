@@ -123,5 +123,15 @@ namespace NASAproj
                 sr.Close();
             }
         }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("1. Click the \"Data\" button to load a .csv into the system \n" + 
+                            "2. Click the \"Picture\" button to load the pictures into the frame \n" + 
+                            "(Note: Select the first picture from the folder)\n" + 
+                            "3. Select the parameters 1 and 2 from the dropdown list \n" +
+                            "4. Use the Control Buttons (RW, Play\\Pause, FF) to view the images like a video"
+                            , "Help", MessageBoxButtons.OK, MessageBoxIcon.Question);
+        }
     }
 }

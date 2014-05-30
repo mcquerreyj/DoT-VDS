@@ -72,6 +72,7 @@ namespace NASAproj
 
         private void makeButton_Click(object sender, EventArgs e)
         {
+            // check for name field
             if (this.makeFileTextBox.Text == "")
                 MessageBox.Show("No name entered. Please choose a name for the new file!", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             else
@@ -87,11 +88,21 @@ namespace NASAproj
                     {
                         StopEvent evt = new StopEvent(line);
                         if (evt.getCode() == 82 || evt.getCode() == 81)
-                              Console.WriteLine(evt.toString());
+                        {
+                            events.Add(evt);
+
+                            //------------------------------
+                            // THIS WIL NEED TO BE TAKEN OUT 
+                            //------------------------------
+                            Console.WriteLine(evt.toString());
+                        }
                     }
                     MessageBox.Show(this.makeFileTextBox.Text);
                     sr.Close();
                 }
+
+                // Sets the address for the other box and shows what file is loaded into the system
+                loadFileTextBox.Text = openFileDialog1.FileName;
             }
         }
 

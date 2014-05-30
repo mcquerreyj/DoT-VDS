@@ -89,6 +89,7 @@
             this.p1ComboBox.Location = new System.Drawing.Point(615, 322);
             this.p1ComboBox.Name = "p1ComboBox";
             this.p1ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.p1ComboBox.Sorted = true;
             this.p1ComboBox.TabIndex = 6;
             // 
             // p2ComboBox
@@ -97,6 +98,7 @@
             this.p2ComboBox.Location = new System.Drawing.Point(742, 322);
             this.p2ComboBox.Name = "p2ComboBox";
             this.p2ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.p2ComboBox.Sorted = true;
             this.p2ComboBox.TabIndex = 7;
             // 
             // rewindButton

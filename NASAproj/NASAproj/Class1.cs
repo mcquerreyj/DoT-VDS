@@ -35,6 +35,11 @@ namespace NASAproj
             timestamp = hour *1000 + min *10  + mili;
         }
 
+        public int getParam()
+        {
+            return param;
+        }
+
         int getTime()
         {
             return timestamp;

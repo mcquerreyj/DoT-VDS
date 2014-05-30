@@ -91,14 +91,37 @@ namespace NASAproj
                         {
                             events.Add(evt);
 
+
+                            // Fills Param boxes
+                            p1ComboBox.Items.Add(evt.getParam());
+
                             //------------------------------
-                            // THIS WIL NEED TO BE TAKEN OUT 
+                            // THIS WILL NEED TO BE TAKEN OUT 
                             //------------------------------
                             Console.WriteLine(evt.toString());
+
                         }
                     }
                     MessageBox.Show(this.makeFileTextBox.Text);
                     sr.Close();
+
+                    //Removes duplicates from comboboxes
+                    List<object> combo = new List<object>();
+                    foreach (int param in p1ComboBox.Items)
+                    {
+                        if (!combo.Contains(param))
+                        {
+                            combo.Add(param);
+                        }
+                    }
+                    p1ComboBox.Items.Clear();
+                    foreach (int p in combo)
+                    {
+                        p1ComboBox.Items.Add(p);
+                        p2ComboBox.Items.Add(p);
+                    }
+                    
+
                 }
 
                 // Sets the address for the other box and shows what file is loaded into the system

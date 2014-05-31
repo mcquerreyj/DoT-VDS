@@ -66,51 +66,50 @@ namespace NASAproj
 
         private void dataButton_Click(object sender, EventArgs e)
         {
-                if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                // Dump the event array
+            events.Clear();
+                
+            if(openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                System.IO.StreamReader sr = new
+                   System.IO.StreamReader(openFileDialog1.FileName);
+                sr.ReadLine();
+
+                string line;
+                while((line = sr.ReadLine()) != null)
                 {
-                    System.IO.StreamReader sr = new
-                       System.IO.StreamReader(openFileDialog1.FileName);
-                    sr.ReadLine();
-
-                    string line;
-                    while((line = sr.ReadLine()) != null)
+                    StopEvent evt = new StopEvent(line);
+                    if (evt.getCode() == 82 || evt.getCode() == 81)
                     {
-                        StopEvent evt = new StopEvent(line);
-                        if (evt.getCode() == 82 || evt.getCode() == 81)
-                        {
-                            events.Add(evt);
+                        events.Add(evt);
 
+                        // Fills Param boxes
+                        p1ComboBox.Items.Add(evt.getParam());
 
-                            // Fills Param boxes
-                            p1ComboBox.Items.Add(evt.getParam());
-
-                            //------------------------------
-                            // THIS WILL NEED TO BE TAKEN OUT 
-                            //------------------------------
-                            Console.WriteLine(evt.toString());
-
-                        }
+                        //------------------------------
+                        // THIS WILL NEED TO BE TAKEN OUT 
+                        //------------------------------
+                        Console.WriteLine(evt.toString());
                     }
-                    sr.Close();
-
-                    //Removes duplicates from comboboxes
-                    List<object> combo = new List<object>();
-                    foreach (int param in p1ComboBox.Items)
-                    {
-                        if (!combo.Contains(param))
-                        {
-                            combo.Add(param);
-                        }
-                    }
-                    p1ComboBox.Items.Clear();
-                    foreach (int p in combo)
-                    {
-                        p1ComboBox.Items.Add(p);
-                        p2ComboBox.Items.Add(p);
-                    }
-                    
-
                 }
+                sr.Close();
+
+                //Removes duplicates from comboboxes
+                List<object> combo = new List<object>();
+                foreach (int param in p1ComboBox.Items)
+                {
+                    if (!combo.Contains(param))
+                    {
+                        combo.Add(param);
+                    }
+                }
+                p1ComboBox.Items.Clear();
+                foreach (int p in combo)
+                {
+                    p1ComboBox.Items.Add(p);
+                    p2ComboBox.Items.Add(p);
+                }               
+            }
         }
 
         private void pictureButton_Click(object sender, EventArgs e)

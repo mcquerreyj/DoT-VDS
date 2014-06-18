@@ -35,19 +35,19 @@
             this.rewindButton = new System.Windows.Forms.Button();
             this.playPauseButton = new System.Windows.Forms.Button();
             this.forwardButton = new System.Windows.Forms.Button();
-            this.imagePane = new System.Windows.Forms.PictureBox();
             this.parameter1Label = new System.Windows.Forms.Label();
             this.parameter2Label = new System.Windows.Forms.Label();
             this.statusLabel = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.helpButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.imagePane)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataButton
             // 
-            this.dataButton.Location = new System.Drawing.Point(574, 64);
+            this.dataButton.Location = new System.Drawing.Point(1045, 26);
             this.dataButton.Name = "dataButton";
             this.dataButton.Size = new System.Drawing.Size(75, 23);
             this.dataButton.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // pictureButton
             // 
-            this.pictureButton.Location = new System.Drawing.Point(724, 64);
+            this.pictureButton.Location = new System.Drawing.Point(1135, 26);
             this.pictureButton.Name = "pictureButton";
             this.pictureButton.Size = new System.Drawing.Size(75, 23);
             this.pictureButton.TabIndex = 4;
@@ -68,7 +68,7 @@
             // p1ComboBox
             // 
             this.p1ComboBox.FormattingEnabled = true;
-            this.p1ComboBox.Location = new System.Drawing.Point(574, 173);
+            this.p1ComboBox.Location = new System.Drawing.Point(1059, 82);
             this.p1ComboBox.Name = "p1ComboBox";
             this.p1ComboBox.Size = new System.Drawing.Size(121, 21);
             this.p1ComboBox.Sorted = true;
@@ -77,7 +77,7 @@
             // p2ComboBox
             // 
             this.p2ComboBox.FormattingEnabled = true;
-            this.p2ComboBox.Location = new System.Drawing.Point(724, 173);
+            this.p2ComboBox.Location = new System.Drawing.Point(1209, 82);
             this.p2ComboBox.Name = "p2ComboBox";
             this.p2ComboBox.Size = new System.Drawing.Size(121, 21);
             this.p2ComboBox.Sorted = true;
@@ -85,7 +85,7 @@
             // 
             // rewindButton
             // 
-            this.rewindButton.Location = new System.Drawing.Point(602, 256);
+            this.rewindButton.Location = new System.Drawing.Point(1059, 109);
             this.rewindButton.Name = "rewindButton";
             this.rewindButton.Size = new System.Drawing.Size(33, 23);
             this.rewindButton.TabIndex = 8;
@@ -95,7 +95,7 @@
             // 
             // playPauseButton
             // 
-            this.playPauseButton.Location = new System.Drawing.Point(641, 256);
+            this.playPauseButton.Location = new System.Drawing.Point(1098, 109);
             this.playPauseButton.Name = "playPauseButton";
             this.playPauseButton.Size = new System.Drawing.Size(39, 23);
             this.playPauseButton.TabIndex = 9;
@@ -105,7 +105,7 @@
             // 
             // forwardButton
             // 
-            this.forwardButton.Location = new System.Drawing.Point(686, 256);
+            this.forwardButton.Location = new System.Drawing.Point(1143, 109);
             this.forwardButton.Name = "forwardButton";
             this.forwardButton.Size = new System.Drawing.Size(33, 23);
             this.forwardButton.TabIndex = 10;
@@ -113,18 +113,10 @@
             this.forwardButton.UseVisualStyleBackColor = true;
             this.forwardButton.Click += new System.EventHandler(this.button7_Click);
             // 
-            // imagePane
-            // 
-            this.imagePane.Location = new System.Drawing.Point(5, 5);
-            this.imagePane.Name = "imagePane";
-            this.imagePane.Size = new System.Drawing.Size(538, 422);
-            this.imagePane.TabIndex = 13;
-            this.imagePane.TabStop = false;
-            // 
             // parameter1Label
             // 
             this.parameter1Label.AutoSize = true;
-            this.parameter1Label.Location = new System.Drawing.Point(571, 157);
+            this.parameter1Label.Location = new System.Drawing.Point(1056, 66);
             this.parameter1Label.Name = "parameter1Label";
             this.parameter1Label.Size = new System.Drawing.Size(64, 13);
             this.parameter1Label.TabIndex = 14;
@@ -133,7 +125,7 @@
             // parameter2Label
             // 
             this.parameter2Label.AutoSize = true;
-            this.parameter2Label.Location = new System.Drawing.Point(721, 157);
+            this.parameter2Label.Location = new System.Drawing.Point(1206, 66);
             this.parameter2Label.Name = "parameter2Label";
             this.parameter2Label.Size = new System.Drawing.Size(64, 13);
             this.parameter2Label.TabIndex = 15;
@@ -143,7 +135,7 @@
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(571, 405);
+            this.statusLabel.Location = new System.Drawing.Point(1056, 190);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(37, 13);
             this.statusLabel.TabIndex = 16;
@@ -161,7 +153,7 @@
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(574, 353);
+            this.helpButton.Location = new System.Drawing.Point(1059, 138);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(75, 23);
             this.helpButton.TabIndex = 17;
@@ -169,16 +161,26 @@
             this.helpButton.UseVisualStyleBackColor = true;
             this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1036, 740);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 439);
+            this.ClientSize = new System.Drawing.Size(1370, 750);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.helpButton);
             this.Controls.Add(this.statusLabel);
             this.Controls.Add(this.parameter2Label);
             this.Controls.Add(this.parameter1Label);
-            this.Controls.Add(this.imagePane);
             this.Controls.Add(this.forwardButton);
             this.Controls.Add(this.playPauseButton);
             this.Controls.Add(this.rewindButton);
@@ -189,7 +191,7 @@
             this.Name = "Form1";
             this.Text = "Vehicle Detection Comparison";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.imagePane)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,13 +206,13 @@
         private System.Windows.Forms.Button rewindButton;
         private System.Windows.Forms.Button playPauseButton;
         private System.Windows.Forms.Button forwardButton;
-        private System.Windows.Forms.PictureBox imagePane;
         private System.Windows.Forms.Label parameter1Label;
         private System.Windows.Forms.Label parameter2Label;
         private System.Windows.Forms.Label statusLabel;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.Button helpButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -114,12 +114,10 @@ namespace NASAproj
 
         private void pictureButton_Click(object sender, EventArgs e)
         {
-            if (openFileDialog2.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            OpenFileDialog pict = new OpenFileDialog();
+            if(pict.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                System.IO.StreamReader sr = new
-                   System.IO.StreamReader(openFileDialog1.FileName);
-                MessageBox.Show(sr.ReadToEnd());
-                sr.Close();
+                pictureBox1.ImageLocation = pict.FileName;
             }
         }
 

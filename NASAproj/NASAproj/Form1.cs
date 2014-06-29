@@ -18,38 +18,20 @@ namespace NASAproj
             InitializeComponent();
         }
 
-        //MakeFileTextBox text change event
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         //RewindButton click event
-        private void button5_Click(object sender, EventArgs e)
+        private void rewind_Click(object sender, EventArgs e)
         {
 
         }
 
         //playPauseButton click event
-        private void button6_Click(object sender, EventArgs e)
+        private void playPause_Click(object sender, EventArgs e)
         {
 
         }
 
         //fastForwardButton click event
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //Parameter2 Label click event
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //StatusLabel click event
-        private void label3_Click(object sender, EventArgs e)
+        private void forward_Click(object sender, EventArgs e)
         {
 
         }

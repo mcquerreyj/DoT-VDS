@@ -42,12 +42,14 @@
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.helpButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.discrepLabel = new System.Windows.Forms.Label();
+            this.discrepCombo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataButton
             // 
-            this.dataButton.Location = new System.Drawing.Point(1045, 26);
+            this.dataButton.Location = new System.Drawing.Point(1059, 26);
             this.dataButton.Name = "dataButton";
             this.dataButton.Size = new System.Drawing.Size(75, 23);
             this.dataButton.TabIndex = 1;
@@ -57,7 +59,7 @@
             // 
             // pictureButton
             // 
-            this.pictureButton.Location = new System.Drawing.Point(1135, 26);
+            this.pictureButton.Location = new System.Drawing.Point(1149, 26);
             this.pictureButton.Name = "pictureButton";
             this.pictureButton.Size = new System.Drawing.Size(75, 23);
             this.pictureButton.TabIndex = 4;
@@ -91,7 +93,7 @@
             this.rewindButton.TabIndex = 8;
             this.rewindButton.Text = "<<";
             this.rewindButton.UseVisualStyleBackColor = true;
-            this.rewindButton.Click += new System.EventHandler(this.button5_Click);
+            this.rewindButton.Click += new System.EventHandler(this.rewind_Click);
             // 
             // playPauseButton
             // 
@@ -101,7 +103,7 @@
             this.playPauseButton.TabIndex = 9;
             this.playPauseButton.Text = "> \\ | |";
             this.playPauseButton.UseVisualStyleBackColor = true;
-            this.playPauseButton.Click += new System.EventHandler(this.button6_Click);
+            this.playPauseButton.Click += new System.EventHandler(this.playPause_Click);
             // 
             // forwardButton
             // 
@@ -111,7 +113,7 @@
             this.forwardButton.TabIndex = 10;
             this.forwardButton.Text = ">>";
             this.forwardButton.UseVisualStyleBackColor = true;
-            this.forwardButton.Click += new System.EventHandler(this.button7_Click);
+            this.forwardButton.Click += new System.EventHandler(this.forward_Click);
             // 
             // parameter1Label
             // 
@@ -130,17 +132,15 @@
             this.parameter2Label.Size = new System.Drawing.Size(64, 13);
             this.parameter2Label.TabIndex = 15;
             this.parameter2Label.Text = "Parameter 2";
-            this.parameter2Label.Click += new System.EventHandler(this.label2_Click);
             // 
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(1056, 190);
+            this.statusLabel.Location = new System.Drawing.Point(1059, 265);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(37, 13);
             this.statusLabel.TabIndex = 16;
             this.statusLabel.Text = "Status";
-            this.statusLabel.Click += new System.EventHandler(this.label3_Click);
             // 
             // openFileDialog1
             // 
@@ -153,7 +153,7 @@
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(1059, 138);
+            this.helpButton.Location = new System.Drawing.Point(1059, 192);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(75, 23);
             this.helpButton.TabIndex = 17;
@@ -164,18 +164,37 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1036, 740);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // discrepLabel
+            // 
+            this.discrepLabel.AutoSize = true;
+            this.discrepLabel.Location = new System.Drawing.Point(1059, 149);
+            this.discrepLabel.Name = "discrepLabel";
+            this.discrepLabel.Size = new System.Drawing.Size(66, 13);
+            this.discrepLabel.TabIndex = 19;
+            this.discrepLabel.Text = "Discrepancy";
+            // 
+            // discrepCombo
+            // 
+            this.discrepCombo.FormattingEnabled = true;
+            this.discrepCombo.Location = new System.Drawing.Point(1059, 165);
+            this.discrepCombo.Name = "discrepCombo";
+            this.discrepCombo.Size = new System.Drawing.Size(121, 21);
+            this.discrepCombo.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 750);
+            this.ClientSize = new System.Drawing.Size(1362, 742);
+            this.Controls.Add(this.discrepCombo);
+            this.Controls.Add(this.discrepLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.helpButton);
             this.Controls.Add(this.statusLabel);
@@ -213,6 +232,8 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
         private System.Windows.Forms.Button helpButton;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label discrepLabel;
+        private System.Windows.Forms.ComboBox discrepCombo;
     }
 }
 
